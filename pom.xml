@@ -4,7 +4,7 @@
 	<groupId>in.javahome</groupId>
 	<artifactId>myweb</artifactId>
 	<packaging>war</packaging>
-	<version>0.0.5</version>
+	<version>001</version>
 	<name>hello</name>
 	
 	<!-- Demo on Github Webhooks-->
