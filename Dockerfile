@@ -1,3 +1,8 @@
-FROM tomcat:8
-# Take the war and copy to webapps of tomcat
-COPY target/newapp.war /usr/local/tomcat/webapps/
+FROM centos:latest
+MAINTAINER sowbarnika
+RUN yum install -y httpd 
+RUN yum install -y unzip
+COPY target/hello.war /usr/local/tomcat/webapps/
+CMD ["/usr/sbin/httpd", "-D",  "FOREGROUND"]
+EXPOSE 80
+
